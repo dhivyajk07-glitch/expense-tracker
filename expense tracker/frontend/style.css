@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5fb;
+    color: #252744;
+}
+
+header {
+    background: #5b5bd6;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 18px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.summary-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+.summary-card h3 {
+    margin-top: 0;
+    font-size: 15px;
+    color: #666984;
+}
+
+.summary-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+}
+
+.form-section,
+.transactions-section {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d7d9e5;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px 18px;
+    background: #5b5bd6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #4141aa;
+}
+
+#search {
+    margin-bottom: 16px;
+}
+
+.transaction-card {
+    border: 1px solid #e1e3ee;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+
+.transaction-card p {
+    margin: 6px 0;
+    overflow-wrap: anywhere;
+}
+
+.income {
+    color: #16834a;
+    font-weight: bold;
+}
+
+.expense {
+    color: #d93650;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: #d93650;
+    margin-top: 0;
+}
+
+@media (max-width: 650px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .transaction-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
